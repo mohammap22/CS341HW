@@ -1,12 +1,14 @@
-eventHandler1 = function(){
+//Peter Mohammadi, button javascript file
+
+eventHandler1 = function(){//this is the event handler that gets called when a button is pressed
     if($("textarea").val().indexOf("vegan") > -1 ){
-			alert('Cheese contains dairy.'); 
+			alert('Cheese contains dairy.'); //checks if 'vegan' is in the textarea 
 		}
 	else{
 		var number = $("select").find(":selected").text();
 		var stuff = $('input[name = "topping"]:checked').val(); 
 		var notes = $('textarea').val(); 
-		$("label").hide(); 
+		$("label").hide(); //basically replaces a bunch of parts of the file with text 
 		$("p").hide();               
 		$("h3").hide();
 		$("input").hide();	   
