@@ -1,0 +1,104 @@
+<!-- Peter Mohammadi-->
+
+<!DOCTYPE html>
+<html>
+<style>
+hey {}
+button {
+  background-color: #4CAF50; /* Green */
+  border-radius: 8px;   /*making the button more round and fancy*/
+  padding: 15px 32px; /*trying not to cram website */
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+}
+.dropbtn { /*some of these dropdown methods I got from w3schools */ 
+  background-color: #4CAF20;
+  color: white;
+  padding: 16px;
+  font-size: 16px; /* just changing base font size */
+  border: none;
+} 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content { /*whats in the dropdown */
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1; /* so its not see-through */
+  min-width: 70px;
+  height: 130px;
+  overflow: scroll; 
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;} /*additions to class dropdown-content */
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;} /*more colors*/ 
+div2 {
+  width: 100%; /*will be used to center the page*/ 
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#example1 {
+  background: silver; /*silver background*/
+}
+#example2 {
+  background: gray; /*gray background*/
+}
+img { display: block; margin-left:auto; margin-right: auto;
+}
+h1, h2, h3, h4, h5, h6  {
+  font-family: Arial, Helvetica, sans-serif; /*different fonts*/
+}
+</style>
+<body>
+<div><h1>Cheesecake Order Form</h1></div>  <!-- Header and title of page -->
+
+<img src="cheesecake.jpg"> <!-- My image -->
+
+<div id ="example2";>
+<p>Quantity Topping:</p>
+
+
+<select name="number" id="amount">  <!-- Number dropdown -->
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+
+
+<ul>
+<input type="radio" id="plain" name="topping" value="plain"> <!-- radio buttons-->
+<label for="plain">Plain</label><br>
+<input type="radio" id="cherry" name="topping" value="cherry">
+<label for="cherry">Cherry</label><br>
+<input type="radio" id="chocolate" name="topping" value="cherry">
+<label for="chocolate">Chocolate</label>
+</ul>
+</div>
+<div id="example1">
+
+<h3>Notes:</h3>
+
+<textarea rows = "5" cols = "55">Enter any special instructions here.</textarea>
+</div>
+<div id="example2">
+<b style ="font-size:25px;"> Top Orders Last Month </b> <!-- bolded and larger text-->
+<ul>
+  <li>11 cherry</li>
+  <li>17 chocolate</li>
+  <li>31 plain</li>
+</ul>
+</div>
+<div>
+<button type = "button">&nbsp Order &nbsp </button>
+</div>
+
+</body>
+</html>
